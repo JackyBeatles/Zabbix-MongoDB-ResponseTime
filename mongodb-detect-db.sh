@@ -1,5 +1,5 @@
 #!/bin/bash
-๊๊USER=""
+๊USER=""
 PASSWD=""
 DBNAME=""
 MONGO_DB="$(mongo $DBNAME --quiet --eval "db.getCollectionNames().toString().replace(/,/g, ' ')" --port 27017 -u "$USER" -p "$PASSWD" --host  127.0.0.1  --authenticationDatabase "admin")"
